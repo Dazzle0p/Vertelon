@@ -10,6 +10,7 @@ import AllServices from "./pages/AllServices";
 import Contact from "./pages/Contact";
 import Projects from "./components/Projects";
 import Whyus from "./components/Whyus";
+import TeamMembers from "./pages/TeamMembers";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -19,16 +20,16 @@ function App() {
         <Navbar></Navbar>
 
         <div className="mx-0 h-full">
-            <ScrollToTop/>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/whyus" element={<Whyus />} />
-            
             <Route path="/projects/:id" element={<ProjectDetails />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/services" element={<AllServices />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/contact/:title" element={<Contact />} />
+            <Route path="team" element={<TeamMembers />} />
             {/* <Route path="/portfolio" element={<Portfolio />} /> */}
             {/* <Route path="/services" element={<Services />} /> */}
             {/* <Route path="/franchise" element={<Franchise />} /> */}

@@ -49,6 +49,10 @@ const Navbar = () => {
             <li className="py-1">Projects</li>
             <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
           </NavLink>
+          <NavLink to="/team">
+            <li className="py-1">Our Team</li>
+            <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
+          </NavLink>
           <NavLink to="/contact">
             <li className="py-1">Contact</li>
             <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
@@ -61,8 +65,15 @@ const Navbar = () => {
             className="text-3xl md:hidden cursor-pointer ml-1  "
           />
         </div>
-        <div className="hidden md:block" data-aos="fade-down" data-aos-duration="500">
-          <button onClick={() => navigate("/contact")} className="bg-blue-500 hover:bg-blue-700 text-white px-8 py-3 rounded-md">
+        <div
+          className="hidden md:block"
+          data-aos="fade-down"
+          data-aos-duration="500"
+        >
+          <button
+            onClick={() => navigate("/contact")}
+            className="bg-blue-500 hover:bg-blue-700 text-white px-8 py-3 rounded-md"
+          >
             Book Free Consultation
           </button>
         </div>
