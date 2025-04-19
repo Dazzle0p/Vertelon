@@ -66,7 +66,7 @@ export default function TeamMembers() {
         {teamMembers.slice(1).map((member, index) => (
           <div
             key={index + 1}
-            className="bg-[#ACEBE2] text-center p-6 rounded-xl shadow-lg border-2 border-transparent hover:border-2  hover:bg-[#a0e8db] hover:border-[#00838d]"
+            className="bg-[#ACEBE2] text-center p-6 rounded-xl shadow-lg border-2 border-transparent hover:border-2  hover:bg-[#a0e8db] hover:border-[#00838d] transition-colors duration-200"
             data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
             data-aos-duration="800"
             data-aos-offset="200"
@@ -76,8 +76,8 @@ export default function TeamMembers() {
               alt={member.name}
               className="w-[180px] h-[180px] rounded-full mx-auto mb-4 object-cover"
             />
-            <h2 className="text-lg font-bold">{member.name}</h2>
-            <p className="text-sm">{member.title}</p>
+            <h2 className="text-xl font-bold">{member.name}</h2>
+            <p className="text-sm text-gray-700">{member.title}</p>
           </div>
         ))}
       </div>
