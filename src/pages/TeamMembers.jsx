@@ -1,41 +1,47 @@
 import React from "react";
-import test from "../assets/testimonial_profile_7senses.png";
+import vijay from "../assets/vijay.png";
+import utkarsh from "../assets/utk.png";
+import harsh from "../assets/harsh.png";
+import sanskar from "../assets/sans.png";
+import subh from "../assets/subh.png";
+import sardul from "../assets/sardul.png";
+import satyam from "../assets/satyam.png";
 
 const teamMembers = [
   {
     name: "Shubham Raj",
     title: "Founder & CEO",
-    image: test,
+    image: subh,
   },
   {
     name: "Sanskar Mishra",
     title: "Designing & Marketing Expert",
-    image: test,
+    image: sanskar,
   },
   {
     name: "Utkarsh Jha",
     title: "Website Developer",
-    image: test,
+    image: utkarsh,
   },
   {
     name: "Harsh Baghel",
     title: "Website Developer",
-    image: test,
+    image: harsh,
   },
   {
     name: "Shardul Vikram",
     title: "App Developer",
-    image: test,
+    image: sardul,
   },
   {
     name: "Vijayant Priyadarshi",
     title: "App Developer",
-    image: test,
+    image: vijay,
   },
   {
     name: "Satyam Devraj",
     title: "AI Developer",
-    image: test,
+    image: satyam,
   },
 ];
 
@@ -62,7 +68,7 @@ export default function TeamMembers() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2  gap-6 max-w-6xl mx-auto">
         {teamMembers.slice(1).map((member, index) => (
           <div
             key={index + 1}
